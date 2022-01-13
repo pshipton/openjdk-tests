@@ -131,7 +131,6 @@ java/lang/reflect/Nestmates/TestReflectionAPI.java	https://github.com/adoptium/a
 java/lang/reflect/Proxy/ProxyForMethodHandle.java	https://github.com/eclipse-openj9/openj9/issues/7741	generic-all
 java/lang/reflect/Proxy/ProxyLayerTest.java	https://github.com/eclipse-openj9/openj9/issues/7775	generic-all
 java/lang/reflect/PublicMethods/PublicMethodsTest.java	https://github.com/eclipse-openj9/openj9/issues/7897	generic-all
-java/lang/reflect/exeCallerAccessTest/CallerAccessTest.java https://github.com/adoptium/temurin-build/issues/248 generic-all
 jdk/modules/etc/DefaultModules.java	https://github.com/adoptium/aqa-tests/issues/1267	macosx-all
 jdk/modules/incubator/ImageModules.java	https://github.com/adoptium/aqa-tests/issues/1267	macosx-all
 vm/JniInvocationTest.java	https://github.com/adoptium/temurin-build/issues/248	macosx-all
