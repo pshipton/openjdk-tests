@@ -46,13 +46,18 @@
 	<property name="jtrunner_bin_dir" value="${jtrunner_src_dir}/bin" /> 
 
 	<!-- Setup properties to allow projects to use a copy of Visual Studio for compiling native test cases.  -->
-	<!-- Look for either version 10.0 or 14.0 in the default installation location.  -->
+	<!-- Look for versions 10.0, 14.0 or 15.0 in the default installation location.  -->
 	<!-- To use a different location property rtb.vcvarsall_filename needs to be set on the command line for the build.  -->
 	<!-- The vcvarsall.bat file argument amd64 is added if the javac being used to compile the java classes is a 64 bit java. -->
+	<property name="vs15_vcvarsall_filename" location="c:\\Program Files (x86)\\Microsoft Visual Studio 15.0\\VC\\vcvarsall.bat"/>
+	<available file="${vs15_vcvarsall_filename}" property="vs15_available"/>
 	<property name="vs14_vcvarsall_filename" location="c:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\vcvarsall.bat"/>
 	<available file="${vs14_vcvarsall_filename}" property="vs14_available"/>
 	<property name="vs10_vcvarsall_filename" location="c:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\vcvarsall.bat"/>
 	<available file="${vs10_vcvarsall_filename}" property="vs10_available"/>
+	<condition property="vcvarsall_filename" value="${vs15_vcvarsall_filename}">
+		<isset property="vs15_available"/>
+	</condition>
 	<condition property="vcvarsall_filename" value="${vs14_vcvarsall_filename}">
 		<isset property="vs14_available"/>
 	</condition>
