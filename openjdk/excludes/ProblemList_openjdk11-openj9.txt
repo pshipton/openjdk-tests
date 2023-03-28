@@ -275,7 +275,6 @@ sun/security/mscapi/InteropWithSunRsaSign.java	https://github.ibm.com/runtimes/b
 sun/security/mscapi/KeyAlgorithms.java	https://github.ibm.com/runtimes/backlog/issues/795	windows-all
 sun/security/mscapi/KeyStoreEmptyCertChain.java	https://github.ibm.com/runtimes/backlog/issues/795	windows-all
 sun/security/mscapi/PublicKeyInterop.java	https://github.ibm.com/runtimes/backlog/issues/795	windows-all
-sun/security/mscapi/RSAEncryptDecrypt.java	https://github.ibm.com/runtimes/backlog/issues/795	windows-all
 sun/security/mscapi/ShortRSAKeyWithinTLS.java	https://github.ibm.com/runtimes/backlog/issues/795	windows-all
 sun/security/mscapi/SignUsingNONEwithRSA.java	https://github.ibm.com/runtimes/backlog/issues/795	windows-all
 sun/security/mscapi/SignUsingSHA2withRSA.java	https://github.ibm.com/runtimes/backlog/issues/795	windows-all
