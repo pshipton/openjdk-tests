@@ -83,6 +83,23 @@
 		</groups>
 	</test>
 	<test>
+		<testCaseName>jck-runtime-api-java_lang-foreign</testCaseName>
+		<variations>
+			<variation>NoOptions</variation>
+		</variations>
+		<command>$(GEN_JTB_GENERIC) tests=api/java_lang/foreign testsuite=RUNTIME; \
+		$(EXEC_RUNTIME_TEST); \
+		$(TEST_STATUS); \
+		$(GEN_SUMMARY_GENERIC) tests=api/java_lang/foreign testsuite=RUNTIME
+	</command>
+		<levels>
+			<level>sanity</level>
+		</levels>
+		<groups>
+			<group>jck</group>
+		</groups>
+	</test>
+	<test>
 		<testCaseName>jck-runtime-api-java_lang-reflect</testCaseName>
 		<variations>
 			<variation>NoOptions</variation>
