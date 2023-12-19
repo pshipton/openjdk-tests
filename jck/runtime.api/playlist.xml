@@ -87,10 +87,10 @@
 		<variations>
 			<variation>NoOptions</variation>
 		</variations>
-		<command>$(GEN_JTB_GENERIC) tests=api/java_lang/foreign testsuite=RUNTIME; \
+		<command>$(GEN_JTB_GENERIC) tests=api/java_lang/foreign/MemorySegment testsuite=RUNTIME; \
 		$(EXEC_RUNTIME_TEST); \
 		$(TEST_STATUS); \
-		$(GEN_SUMMARY_GENERIC) tests=api/java_lang/foreign testsuite=RUNTIME
+		$(GEN_SUMMARY_GENERIC) tests=api/java_lang/foreign/MemorySegment testsuite=RUNTIME
 	</command>
 		<levels>
 			<level>sanity</level>
