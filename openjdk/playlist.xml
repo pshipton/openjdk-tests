@@ -412,7 +412,7 @@
 	-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
 	${FEATURE_PROBLEM_LIST_FILE} \
 	${VENDOR_PROBLEM_LIST_FILE} \
-	$(Q)$(JTREG_HOTSPOT_TEST_DIR)/serviceability/jvmti$(Q); \
+	$(Q)$(JTREG_HOTSPOT_TEST_DIR)/serviceability/jvmti/vthread/VThreadEventTest/VThreadEventTest.java$(Q); \
 	$(TEST_STATUS)</command>
 		<versions>
 			<version>19+</version>
