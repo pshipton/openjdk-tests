@@ -342,7 +342,7 @@ timestamps{
                     }
                 }
 
-            if (PLATFORM == "ppc64_aix" && env.JENKINS_URL.contains("hyc-runtimes") && env.LABEL == "") {
+            if (PLATFORM == "ppc64_aix" && env.JENKINS_URL.contains("hyc-runtimes") && params.LABEL == "") {
                 if (!params.JDK_VERSION.isInteger() || params.JDK_VERSION.toInteger() >= 25) {
                     LABEL += "&&sw.tool.c++runtime.17_1"
                 }
