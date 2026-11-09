@@ -1285,7 +1285,7 @@
 		<variations>
 			<variation>NoOptions</variation>
 		</variations>
-		<command>$(GEN_JTB_GENERIC) tests=api/org_omg testsuite=RUNTIME; \
+		<command>$(GEN_JTB_GENERIC) tests=api/org_omg testsuite=RUNTIME concurrency=1; \
 		$(EXEC_RUNTIME_TEST_WITH_AGENT); \
 		$(TEST_STATUS); \
 		$(GEN_SUMMARY_GENERIC) tests=api/org_omg testsuite=RUNTIME
